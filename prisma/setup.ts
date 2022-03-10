@@ -5,24 +5,10 @@ const users = [
   {
     name: "loli",
     email: "loli@mail",
-    items: {
-      create: [
-        {
-          title: "bag",
-          image: "img.jpg",
-        },
-      ],
-    },
   },
   {
     name: "luli",
     email: "luli@mail",
-    create: [
-      {
-        title: "chair",
-        image: "img.jpg",
-      },
-    ],
   },
   {
     name: "leli",
@@ -31,12 +17,6 @@ const users = [
   {
     name: "lili",
     email: "lili@mail",
-    create: [
-      {
-        title: "ring",
-        image: "img.jpg",
-      },
-    ],
   },
 ];
 

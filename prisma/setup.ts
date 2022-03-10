@@ -1,6 +1,21 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
+const items = [
+  {
+    tite: "Bag",
+    image: "img.jpg",
+  },
+  {
+    tite: "chair",
+    image: "img.jpg",
+  },
+  {
+    tite: "flower",
+    image: "img.jpg",
+  },
+];
+
 const users = [
   {
     name: "loli",
@@ -17,21 +32,6 @@ const users = [
   {
     name: "lili",
     email: "lili@mail",
-  },
-];
-
-const items = [
-  {
-    tite: "Bag",
-    image: "img.jpg",
-  },
-  {
-    tite: "chair",
-    image: "img.jpg",
-  },
-  {
-    tite: "flower",
-    image: "img.jpg",
   },
 ];
 

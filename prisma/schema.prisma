@@ -12,24 +12,28 @@ datasource db {
 
 model User{
   id Int @id @default(autoincrement())
-  name String?
-  email String
-  items Order[]
+  name String
+  email String @unique
+  orders Order[]
+
 }
 
 
 model Item{
   id Int @id @default(autoincrement())
-  title String?
+  title String @unique
   image String
-  users Order[]
+   price  Float
+  orders Order[]
 }
 
 model Order{
   id Int @id @default(autoincrement())
   quantity Int
   userId Int 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id])
   itemId Int
-  item Item @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item Item @relation(fields: [itemId], references: [id])
+
 }
+

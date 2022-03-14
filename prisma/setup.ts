@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 const items: Prisma.ItemCreateInput[] = [
   {
-    title: "Bag",
+    title: "bag",
     image: "img.jpg",
     price: 1.9,
   },
